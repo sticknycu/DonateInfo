@@ -18,18 +18,18 @@ public class MainClass extends PluginBase {
 
     @Override
     public void onLoad() {
-        this.getLogger().info(TextFormat.WHITE + "NukkitPerms loaded!");
+        this.getLogger().info(TextFormat.WHITE + "DonateInfo loaded!");
     }
 
     @Override
     public void onEnable() {
-        this.getLogger().info(TextFormat.DARK_GREEN + "NukkitPerms enabled!");
+        this.getLogger().info(TextFormat.DARK_GREEN + "DonateInfo enabled!");
         this.getServer().getPluginManager().registerEvents(new EventListener(this), this);
     }
 
     @Override
     public void onDisable() {
-        this.getLogger().info(TextFormat.DARK_RED + "NukkitPerms disabled!");
+        this.getLogger().info(TextFormat.DARK_RED + "DonateInfo disabled!");
     }
 
     @Override
