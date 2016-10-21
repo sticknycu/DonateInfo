@@ -1,7 +1,6 @@
 package nycuro;
 
 import cn.nukkit.plugin.PluginBase;
-import cn.nukkit.event.Listener;
 import cn.nukkit.utils.TextFormat;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
@@ -15,7 +14,7 @@ import java.util.LinkedHashMap;
  * author: MagicDroidX
  * NukkitExamplePlugin Project
  */
-public class MainClass extends PluginBase implements Listener {
+public class MainClass extends PluginBase {
 
     @Override
     public void onLoad() {
