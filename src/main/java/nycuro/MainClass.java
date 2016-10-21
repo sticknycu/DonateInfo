@@ -102,7 +102,6 @@ public class MainClass extends PluginBase {
 		default:
 			return false;
         }
-        return true;
     }
 
 }
