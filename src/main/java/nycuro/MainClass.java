@@ -74,13 +74,13 @@ public class MainClass extends PluginBase {
 			sender.sendMessage(TextFormat.RED + "-----------------------------------------");
 			sender.sendMessage(TextFormat.GOLD + "         Permisii Commander:       ");
 			sender.sendMessage(TextFormat.BLUE + "- In plus fata de Admin ( Afla cu /admin ):       ");
-			sender.sendMessage(TextFormat.BLUE + "- /effect , /give, /tp, /jump, /repair");
+			sender.sendMessage(TextFormat.BLUE + "- /effect , /give, /tpo, /tpohere, /jump, /repair");
 			sender.sendMessage(TextFormat.RED + "-----------------------------------------");
 			return true;
 		case "neon":
 			sender.sendMessage(TextFormat.RED + "-----------------------------------------");
 			sender.sendMessage(TextFormat.GOLD + "         Permisii Neon:       ");
-			sender.sendMessage(TextFormat.BLUE + "- Aproape toate. ):       ");
+			sender.sendMessage(TextFormat.BLUE + "- Aproape toate:       ");
 			sender.sendMessage(TextFormat.BLUE + "- NU ARE OP. OP nu se vinde.");
 			sender.sendMessage(TextFormat.RED + "-----------------------------------------");
 			return true;
@@ -96,7 +96,7 @@ public class MainClass extends PluginBase {
 			sender.sendMessage(TextFormat.GOLD + "         Permisii Ajutor:       ");
 			sender.sendMessage(TextFormat.BLUE + "- Ca la VIP+ ( Afla la /vip+ ):       ");
 			sender.sendMessage(TextFormat.BLUE + "- /kick, /time, /say, /broadcast, /ban, /ban-ip");
-			sender.sendMessage(TextFormat.BLUE + "- /pardon, /pardon-ip, /tp, /weather");
+			sender.sendMessage(TextFormat.BLUE + "- /pardon, /pardon-ip, /tpo, /tpohere, /weather");
 			sender.sendMessage(TextFormat.RED + "-----------------------------------------");
 			return true;
 		default:
