@@ -1,0 +1,74 @@
+#name, main, version and api are required
+name: NukkitPerms
+main: nycuro.MainClass
+#remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
+version: "1.0.0"
+api: ["1.0.0"]
+
+author: NycuRO
+description: Show permision of ranks. For my server.
+commands:
+  jucator:
+    description: Show permission of rank Jucator
+    usage: "/jucator"
+    permission: nycuro.jucator
+  vip:
+    description: Show permission of rank VIP
+    usage: "/vip"
+    permission: nycuro.vip
+  vip+:
+    description: Show permission of rank VIP+
+    usage: "/vip+"
+    permission: nycuro.vipplus
+  mod:
+    description: Show permission of rank Mod
+    usage: "/mod"
+    permission: nycuro.mod
+  admin:
+    description: Show permission of rank Admin
+    usage: "/admin"
+    permission: nycuro.admin
+  commander:
+    description: Show permission of rank Commander
+    usage: "/commander"
+    permission: nycuro.comander
+  neon:
+    description: Show permission of rank Neon
+    usage: "/neon"
+    permission: nycuro.neon
+  yt:
+    description: Show permission of rank YT
+    usage: "/yt"
+    permission: nycuro.yt
+  ajutor:
+    description: Show permission of rank Ajutor
+    usage: "/ajutor"
+    permission: nycuro.ajutor
+permissions:
+  nycuro.jucator:
+    description: "Show permission of rank Jucator"
+    default: true
+  nycuro.vip:
+    description: "Show permission of rank VIP"
+    default: true
+  nycuro.vipplus:
+    description: "Show permission of rank VIP+"
+    default: true
+  nycuro.mod:
+    description: "Show permission of rank Mod"
+    default: true
+  nycuro.admin:
+    description: "Show permission of rank Admin"
+    default: true
+  nycuro.commander:
+    description: "Show permission of rank Commander"
+    default: true
+  nycuro.neon:
+    description: "Show permission of rank Neon"
+    default: true
+  nycuro.yt:
+    description: "Show permission of rank YT"
+    default: true
+  nycuro.ajutor:
+    description: "Show permission of rank Ajutor"
+    default: true
