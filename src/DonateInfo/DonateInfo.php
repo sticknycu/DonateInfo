@@ -1,6 +1,6 @@
 <?php
 
-namespace DonateInfo\DonateInfo;
+namespace DonateInfo;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
