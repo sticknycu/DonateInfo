@@ -1,6 +1,6 @@
 #name, main, version and api are required
 name: DonateInfo
-main: nycuro.MainClass
+main: DonateInfo.DonateInfo
 #remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
 version: "1.0.0"
 api: ["1.0.0"]
@@ -9,66 +9,66 @@ author: NycuRO
 description: Show permision of ranks. For my server.
 commands:
   jucator:
-    description: Show permission of rank Jucator
+    description: Arata permisiile rankului Jucator
     usage: "/jucator"
     permission: nycuro.jucator
-  vip:
-    description: Show permission of rank VIP
-    usage: "/vip"
+  guardian:
+    description: Arata permisiile rankului Guardian
+    usage: "/guardian"
     permission: nycuro.vip
-  vip+:
-    description: Show permission of rank VIP+
-    usage: "/vip+"
-    permission: nycuro.vipplus
-  mod:
-    description: Show permission of rank Mod
-    usage: "/mod"
-    permission: nycuro.mod
-  admin:
-    description: Show permission of rank Admin
-    usage: "/admin"
-    permission: nycuro.admin
-  commander:
-    description: Show permission of rank Commander
-    usage: "/commander"
-    permission: nycuro.comander
+  supreme:
+    description: Arata permisiile rankului Supreme
+    usage: "/supreme"
+    permission: nycuro.supreme
+  ultra:
+    description: Arata permisiile rankului Ultra
+    usage: "/ultra"
+    permission: nycuro.ultra
   neon:
-    description: Show permission of rank Neon
+    description: Arata permisiile rankului Neon
     usage: "/neon"
     permission: nycuro.neon
+  legend:
+    description: Arata permisiile rankului Legend
+    usage: "/legend"
+    permission: nycuro.legend
+  master:
+    description: Arata permisiile rankului Master
+    usage: "/master"
+    permission: nycuro.master
   yt:
-    description: Show permission of rank YT
+    description: Arata permisiile rankului YT
     usage: "/yt"
     permission: nycuro.yt
   ajutor:
-    description: Show permission of rank Ajutor
+    description: Arata permisiile rankului Ajutor
     usage: "/ajutor"
     permission: nycuro.ajutor
 permissions:
   nycuro.jucator:
-    description: "Show permission of rank Jucator"
+    description: "Arata permisiile rankului Jucator"
     default: true
-  nycuro.vip:
-    description: "Show permission of rank VIP"
+  nycuro.guardian:
+    description: "Arata permisiile rankului Guardian"
     default: true
-  nycuro.vipplus:
-    description: "Show permission of rank VIP+"
+  nycuro.supreme:
+    description: "Arata permisiile rankului Supreme"
     default: true
-  nycuro.mod:
-    description: "Show permission of rank Mod"
-    default: true
-  nycuro.admin:
-    description: "Show permission of rank Admin"
-    default: true
-  nycuro.commander:
-    description: "Show permission of rank Commander"
+  nycuro.ultra:
+    description: "Arata permisiile rankului Ultra"
     default: true
   nycuro.neon:
-    description: "Show permission of rank Neon"
+    description: "Arata permisiile rankului Neon"
+    default: true
+  nycuro.legend:
+    description: "Arata permisiile rankului Legend"
+    default: true
+  nycuro.master:
+    description: "Arata permisiile rankului Master"
     default: true
   nycuro.yt:
-    description: "Show permission of rank YT"
+    description: "Arata permisiile rankului YT"
     default: true
   nycuro.ajutor:
-    description: "Show permission of rank Ajutor"
+    description: "Arata permisiile rankului Ajutor"
     default: true
