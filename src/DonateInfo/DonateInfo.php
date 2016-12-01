@@ -8,7 +8,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
 
-class MainClass extends PluginBase {
+class DonateInfo extends PluginBase {
 
     public function onLoad() {
         $this->getLogger()->info(TextFormat::WHITE . "DonateInfo loaded!");
