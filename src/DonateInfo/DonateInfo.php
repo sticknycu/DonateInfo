@@ -65,7 +65,7 @@ class DonateInfo extends PluginBase {
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			return true;
 		case "legend":
-			$sender->sendMeessage(TextFormat::RED . "-----------------------------------------");
+			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			$sender->sendMessage(TextFormat::GOLD . "         Permisii Legend:       ");
 			$sender->sendMessage(TextFormat::BLUE . "- In plus fata de Neon ( Afla cu /neon ):       ");
 			$sender->sendMessage(TextFormat::BLUE . "- /kit legend, /effect , /give, /tpo, /tpohere, /jump, /repair");
