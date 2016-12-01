@@ -1,4 +1,6 @@
-package nycuro;
+<?php
+
+namespace DonateInfo\DonateInfo;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
@@ -6,10 +8,6 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
 
-/**
- * author: MagicDroidX
- * NukkitExamplePlugin Project
- */
 class MainClass extends PluginBase {
 
     public function onLoad() {
