@@ -24,7 +24,6 @@ public class MainClass extends PluginBase {
     @Override
     public void onEnable() {
         this.getLogger().info(TextFormat.DARK_GREEN + "DonateInfo enabled!");
-        this.getServer().getPluginManager().registerEvents(new EventListener(this), this);
     }
 
     @Override
