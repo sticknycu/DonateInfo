@@ -1,0 +1,74 @@
+#name, main, version and api are required
+name: DonateInfo
+main: nycuro.MainClass
+#remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
+version: "1.0.0"
+api: ["1.0.0"]
+
+author: NycuRO
+description: Show permision of ranks. For my server.
+commands:
+  jucator:
+    description: Arata permisiile rankului Jucator
+    usage: "/jucator"
+    permission: nycuro.jucator
+  guardian:
+    description: Arata permisiile rankului Guardian
+    usage: "/guardian"
+    permission: nycuro.vip
+  supreme:
+    description: Arata permisiile rankului Supreme
+    usage: "/supreme"
+    permission: nycuro.supreme
+  ultra:
+    description: Arata permisiile rankului Ultra
+    usage: "/ultra"
+    permission: nycuro.ultra
+  neon:
+    description: Arata permisiile rankului Neon
+    usage: "/neon"
+    permission: nycuro.neon
+  legend:
+    description: Arata permisiile rankului Legend
+    usage: "/legend"
+    permission: nycuro.legend
+  master:
+    description: Arata permisiile rankului Master
+    usage: "/master"
+    permission: nycuro.master
+  yt:
+    description: Arata permisiile rankului YT
+    usage: "/yt"
+    permission: nycuro.yt
+  ajutor:
+    description: Arata permisiile rankului Ajutor
+    usage: "/ajutor"
+    permission: nycuro.ajutor
+permissions:
+  nycuro.jucator:
+    description: "Arata permisiile rankului Jucator"
+    default: true
+  nycuro.guardian:
+    description: "Arata permisiile rankului Guardian"
+    default: true
+  nycuro.supreme:
+    description: "Arata permisiile rankului Supreme"
+    default: true
+  nycuro.ultra:
+    description: "Arata permisiile rankului Ultra"
+    default: true
+  nycuro.neon:
+    description: "Arata permisiile rankului Neon"
+    default: true
+  nycuro.legend:
+    description: "Arata permisiile rankului Legend"
+    default: true
+  nycuro.master:
+    description: "Arata permisiile rankului Master"
+    default: true
+  nycuro.yt:
+    description: "Arata permisiile rankului YT"
+    default: true
+  nycuro.ajutor:
+    description: "Arata permisiile rankului Ajutor"
+    default: true
