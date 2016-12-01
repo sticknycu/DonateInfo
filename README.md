@@ -1,6 +1,6 @@
 # DonateInfo
-This plugin is for show permision of the rank. Is for my Server.
+This plugin is for show permision of the rank. Is for my SkyPvP-Section.
 
-PHP / Java version available in different branch.
+PHP version.
 
 Plugin is Completed.
