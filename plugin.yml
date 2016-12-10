@@ -24,10 +24,10 @@ commands:
     description: Arata permisiile rankului Ultra
     usage: "/ultra"
     permission: nycuro.ultra
-  neon:
-    description: Arata permisiile rankului Neon
-    usage: "/neon"
-    permission: nycuro.neon
+  killer:
+    description: Arata permisiile rankului Killer
+    usage: "/killer"
+    permission: nycuro.killer
   legend:
     description: Arata permisiile rankului Legend
     usage: "/legend"
@@ -57,8 +57,8 @@ permissions:
   nycuro.ultra:
     description: "Arata permisiile rankului Ultra"
     default: true
-  nycuro.neon:
-    description: "Arata permisiile rankului Neon"
+  nycuro.killer:
+    description: "Arata permisiile rankului Killer"
     default: true
   nycuro.legend:
     description: "Arata permisiile rankului Legend"
