@@ -36,7 +36,7 @@ class DonateInfo extends PluginBase {
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			$sender->sendMessage(TextFormat::GOLD . "         Permisii Killer:       ");
 			$sender->sendMessage(TextFormat::BLUE . "- In plus fata de Jucator ( Afla cu /jucator ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit killer, /fly , /getpos");
+			$sender->sendMessage(TextFormat::BLUE . "- /kit killer ,/tempban, /getpos");
 			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 5euro. Afla in HUB cum poti dona. (/donate)");
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			return true;
@@ -52,7 +52,7 @@ class DonateInfo extends PluginBase {
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			$sender->sendMessage(TextFormat::GOLD . "         Permisii Supreme:       ");
 			$sender->sendMessage(TextFormat::BLUE . "- In plus fata de Guardian ( Afla cu /guardian ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit supreme, /say , /god, /mute, /unmute");
+			$sender->sendMessage(TextFormat::BLUE . "- /kit supreme, /say, /broadcast, /mute, /unmute [/mute {player} 0]");
 			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 10euro. Afla in HUB cum poti dona. (/donate)");
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			return true;
@@ -60,7 +60,7 @@ class DonateInfo extends PluginBase {
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			$sender->sendMessage(TextFormat::GOLD . "         Permisii Ultra:       ");
 			$sender->sendMessage(TextFormat::BLUE .  "- In plus fata de Supreme ( Afla cu /supreme ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit ultra, /ban , /ban-ip, /gamemode, /pardon, /pardon-ip");
+			$sender->sendMessage(TextFormat::BLUE . "- /kit ultra, /ban , /ban-ip, /pardon, /pardon-ip, /banlist");
 			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 15euro. Afla in HUB cum poti dona. (/donate)");
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			return true;
@@ -68,7 +68,7 @@ class DonateInfo extends PluginBase {
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			$sender->sendMessage(TextFormat::GOLD . "         Permisii Legend:       ");
 			$sender->sendMessage(TextFormat::BLUE . "- In plus fata de Ultra ( Afla cu /ultra ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit legend, /effect , /give, /tpo, /tpohere, /jump, /repair");
+			$sender->sendMessage(TextFormat::BLUE . "- /kit legend, /effect , /give, /tp, /tphere, /jump, /repair");
 			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 20euro. Afla in HUB cum poti dona. (/donate)");
 			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
 			return true;
