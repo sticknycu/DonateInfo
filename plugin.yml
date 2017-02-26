@@ -8,67 +8,67 @@ api: ["1.0.0"]
 author: NycuRO
 description: Show permision of ranks. For my server.
 commands:
-  jucator:
-    description: Arata permisiile rankului Jucator
-    usage: "/jucator"
-    permission: nycuro.jucator
-  guardian:
-    description: Arata permisiile rankului Guardian
-    usage: "/guardian"
+  membru:
+    description: Arata permisiile rankului Membru
+    usage: "/membru"
+    permission: nycuro.membru
+  membru+:
+    description: Arata permisiile rankului Membru+
+    usage: "/membru+"
+    permission: nycuro.membruplus
+  vip:
+    description: Arata permisiile rankului VIP
+    usage: "/vip"
     permission: nycuro.vip
-  supreme:
-    description: Arata permisiile rankului Supreme
-    usage: "/supreme"
-    permission: nycuro.supreme
-  ultra:
-    description: Arata permisiile rankului Ultra
-    usage: "/ultra"
-    permission: nycuro.ultra
-  killer:
-    description: Arata permisiile rankului Killer
-    usage: "/killer"
-    permission: nycuro.killer
-  legend:
-    description: Arata permisiile rankului Legend
-    usage: "/legend"
-    permission: nycuro.legend
-  master:
-    description: Arata permisiile rankului Master
-    usage: "/master"
-    permission: nycuro.master
+  moderator:
+    description: Arata permisiile rankului Moderator
+    usage: "/moderator"
+    permission: nycuro.moderator
+  moderator+:
+    description: Arata permisiile rankului Moderator+
+    usage: "/moderator+"
+    permission: nycuro.moderatorplus
+  manager:
+    description: Arata permisiile rankului Manager
+    usage: "/manager"
+    permission: nycuro.manager
   yt:
     description: Arata permisiile rankului YT
     usage: "/yt"
     permission: nycuro.yt
-  ajutor:
-    description: Arata permisiile rankului Ajutor
-    usage: "/ajutor"
-    permission: nycuro.ajutor
+  helperjr:
+    description: Arata permisiile rankului HelperJr
+    usage: "/helperjr"
+    permission: nycuro.helperjr
+  helper:
+    description: Arata permisiile rankului Helper
+    usage: "/helper"
+    permission: nycuro.helper
 permissions:
-  nycuro.jucator:
-    description: "Arata permisiile rankului Jucator"
+  nycuro.membru:
+    description: "Arata permisiile rankului Membru"
     default: true
-  nycuro.guardian:
-    description: "Arata permisiile rankului Guardian"
+  nycuro.membruplus:
+    description: "Arata permisiile rankului Membru+"
     default: true
-  nycuro.supreme:
-    description: "Arata permisiile rankului Supreme"
+  nycuro.vip:
+    description: "Arata permisiile rankului VIP"
     default: true
-  nycuro.ultra:
-    description: "Arata permisiile rankului Ultra"
+  nycuro.moderator:
+    description: "Arata permisiile rankului Moderator"
     default: true
-  nycuro.killer:
-    description: "Arata permisiile rankului Killer"
+  nycuro.moderatorplus:
+    description: "Arata permisiile rankului Moderator+"
     default: true
-  nycuro.legend:
-    description: "Arata permisiile rankului Legend"
+  nycuro.manager:
+    description: "Arata permisiile rankului Manager"
     default: true
-  nycuro.master:
-    description: "Arata permisiile rankului Master"
+  nycuro.helperjr:
+    description: "Arata permisiile rankului HelperJr"
     default: true
   nycuro.yt:
     description: "Arata permisiile rankului YT"
     default: true
-  nycuro.ajutor:
-    description: "Arata permisiile rankului Ajutor"
+  nycuro.helper:
+    description: "Arata permisiile rankului Helper"
     default: true
