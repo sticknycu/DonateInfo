@@ -24,80 +24,76 @@ class DonateInfo extends PluginBase {
 
     public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
         switch($command->getName()) {
-		case "jucator":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii Jucator:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit starter, /list, /suicide, /home, /homes, /sethome, /delhome       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /tpa , /tpaccept, /tpdeny, /warps");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Este rankul primit prima data pe server. Fiecare jucator il are.");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
+		case "membru":
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE. "         Permisii Jucator:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /list, /home, /homes, /sethome, /delhome, /sell hand,all       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /tpa , /tpaccept, /tpdeny, /warps, /report, /bail, /votejail".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "INFO: Este rankul primit prima data pe server. Fiecare jucator il are.".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
 			return true;
-		case "killer":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii Killer:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- In plus fata de Jucator ( Afla cu /jucator ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit killer ,/tempban, /getpos");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 5euro. Afla in HUB cum poti dona. (/donate)");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
+		case "membru+":
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "         Permisii Membru+:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- In plus fata de Membru ( Afla cu /membru ):       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /suicide, /back, /getpos".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "INFO: Rankul costa 5euro. Afla in HUB cum poti dona. (/donate, /donatehelp)".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
 			return true;
-		case "guardian":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii Guardian:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- In plus fata de Killer ( Afla cu /killer ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit guardian, /kick , /time, /heal");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 7euro. Afla in HUB cum poti dona. (/donate)");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
+		case "vip":
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "         Permisii VIP:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- In plus fata de Membru+ ( Afla cu /membru+ ):       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /fly".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "INFO: Rankul costa 7euro. Afla in HUB cum poti dona. (/donate, /donatehelp)".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
 			return true;
-		case "supreme":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii Supreme:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- In plus fata de Guardian ( Afla cu /guardian ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit supreme, /say, /broadcast, /mute, /unmute [/mute {player} 0]");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 10euro. Afla in HUB cum poti dona. (/donate)");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
+		case "moderator":
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "         Permisii Moderator:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- In plus fata de VIP ( Afla cu /vip ):       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /heal, /kick, /time, /tempban".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "INFO: Rankul costa 10euro. Afla in HUB cum poti dona. (/donate, /donatehelp)".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
 			return true;
-		case "ultra":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii Ultra:       ");
-			$sender->sendMessage(TextFormat::BLUE .  "- In plus fata de Supreme ( Afla cu /supreme ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit ultra, /ban , /ban-ip, /pardon, /pardon-ip, /banlist");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 15euro. Afla in HUB cum poti dona. (/donate)");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
+		case "moderator+":
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "         Permisii Moderator+:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD .  "- In plus fata de Moderator ( Afla cu /moderator ):       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /god, /ban , /ban-ip, /pardon, /pardon-ip, /banlist, /mute, /me".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE. "INFO: Rankul costa 15euro. Afla in HUB cum poti dona. (/donate, /donatehelp)".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
 			return true;
-		case "legend":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii Legend:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- In plus fata de Ultra ( Afla cu /ultra ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kit legend, /effect , /give, /tp, /tphere, /jump, /repair");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 20euro. Afla in HUB cum poti dona. (/donate)");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			return true;
-		case "master":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii Master:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- Aproape toate:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- Kit special: /kit master     ");
-			$sender->sendMessage(TextFormat::BLUE . "- NU ARE OP. OP nu se vinde.");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Rankul costa 30euro. Afla in HUB cum poti dona. (/donate)");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
+		case "manager":
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "         Permisii Manager:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- In plus fata de Moderator+ ( Afla cu /moderator+ ):       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /repair, /jump, /top, /weather, /say".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "INFO: Rankul costa 20euro. Afla in HUB cum poti dona. (/donate, /donatehelp)".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
 			return true;
 		case "yt":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii YT:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- Ca la Supreme ( Afla la /supreme ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- Kit Special: /kit youtuber.");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Pentru rank faci cerere pe forum. Forumul se afla in HUB. (/info)");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "         Permisii YT:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- Aceleasi permisii ca la VIP: /vip.".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "INFO: Pentru rank faci cerere pe Grupul de pe Facebook. (/info)".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
 			return true;
-		case "ajutor":
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
-			$sender->sendMessage(TextFormat::GOLD . "         Permisii Ajutor:       ");
-			$sender->sendMessage(TextFormat::BLUE . "- Ca la Supreme ( Afla la /supreme ):       ");
-			$sender->sendMessage(TextFormat::BLUE . "- /kick, /time, /say, /broadcast, /ban, /ban-ip");
-			$sender->sendMessage(TextFormat::BLUE . "- /pardon, /pardon-ip, /tpo, /tpohere, /weather");
-			$sender->sendMessage(TextFormat::BLUE . "- Kit Special: /kit ajutor.");
-			$sender->sendMessage(TextFormat::YELLOW . "INFO: Pentru rank faci cerere pe forum. Forumul se afla in HUB. (/info)");
-			$sender->sendMessage(TextFormat::RED . "-----------------------------------------");
+		case "helperjr":
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "         Permisii HelperJr:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- Cele de la VIP: /vip, la care se adauga urmatoarele:".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /tempban, /mute, /jail, /kick, /tp, /me, /weather, /time".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "INFO: Pentru rank faci cerere pe Grupul de pe Facebook. (/info)".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			return true;
+		case "helper":
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "         Permisii Helper:       ".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- Cele de la Helper: /vip, la care se adauga urmatoarele:".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::BOLD . "- /ban , /ban-ip, /pardon, /pardon-ip, /banlist, /say".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::WHITE . "INFO: Pentru rank faci cerere pe Grupul de Facebook. (/info)".TextFormat::RESET);
+			$sender->sendMessage(TextFormat::RESET.TextFormat::YELLOW . "-----------------------------------------".TextFormat::RESET);
 			return true;
 		default:
 			return false;
